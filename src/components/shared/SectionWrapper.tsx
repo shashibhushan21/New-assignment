@@ -22,7 +22,7 @@ export default function SectionWrapper({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className={cn("relative py-16 md:py-24", className)}
+      className={cn("relative py-16 md:py-24 overflow-x-hidden", className)}
     >
       {children}
     </motion.section>

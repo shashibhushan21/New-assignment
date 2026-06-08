@@ -7,7 +7,7 @@ import GlowEffect from "@/components/shared/GlowEffect";
 
 export default function VideoSection() {
   return (
-    <section id="video" className="relative pb-16 md:pb-24 -mt-4">
+    <section id="video" className="relative pb-16 md:pb-24 -mt-4 overflow-x-hidden">
       <GlowEffect
         color="purple"
         size="lg"

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, Zap } from "lucide-react";
 import GlowEffect from "@/components/shared/GlowEffect";
@@ -10,9 +11,32 @@ const stats = [
   { prefix: "+", value: "1,200,000$", label: "Total capital" },
 ];
 
+interface Star {
+  id: number;
+  left: string;
+  top: string;
+  opacity: number;
+  duration: number;
+  delay: number;
+}
+
 export default function Hero() {
+  const [stars, setStars] = useState<Star[]>([]);
+
+  useEffect(() => {
+    const generatedStars = [...Array(40)].map((_, i) => ({
+      id: i,
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      opacity: Math.random() * 0.5 + 0.1,
+      duration: Math.random() * 3 + 2,
+      delay: Math.random() * 2,
+    }));
+    setStars(generatedStars);
+  }, []);
+
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-28 pb-8 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-8 overflow-hidden">
       {/* Background Glows */}
       <GlowEffect
         color="orange"
@@ -29,22 +53,22 @@ export default function Hero() {
 
       {/* Subtle star particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-        {[...Array(40)].map((_, i) => (
+        {stars.map((star) => (
           <motion.div
-            key={i}
+            key={star.id}
             className="absolute w-[1px] h-[1px] bg-white rounded-full"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              opacity: Math.random() * 0.5 + 0.1,
+              left: star.left,
+              top: star.top,
+              opacity: star.opacity,
             }}
             animate={{
               opacity: [0.1, 0.6, 0.1],
             }}
             transition={{
-              duration: Math.random() * 3 + 2,
+              duration: star.duration,
               repeat: Infinity,
-              delay: Math.random() * 2,
+              delay: star.delay,
             }}
           />
         ))}

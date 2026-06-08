@@ -43,6 +43,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -50,6 +52,7 @@ body {
   color: var(--color-text-primary);
   font-family: "Inter", system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* ============================================================
