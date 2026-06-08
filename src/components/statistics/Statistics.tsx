@@ -72,7 +72,7 @@ export default function Statistics() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08, duration: 0.4 }}
-                  whileHover={{ scale: 1.08, y: -4 }}
+                  whileHover={{ scale: 1.05, y: -2 }}
                   className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-orange-500/20 hover:border-orange-500/50 transition-colors duration-300"
                 >
                   <Image

@@ -9,7 +9,7 @@ import { communityPosts } from "@/data/community";
 
 export default function Community() {
   return (
-    <SectionWrapper id="community">
+    <SectionWrapper id="community" className="py-20 md:py-32">
       <GlowEffect
         color="orange"
         size="md"

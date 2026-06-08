@@ -16,7 +16,7 @@ export default function FAQ() {
   };
 
   return (
-    <SectionWrapper id="faq">
+    <SectionWrapper id="faq" className="py-20 md:py-32 mt-20 md:mt-32 mb-20 md:mb-32">
       <GlowEffect
         color="purple"
         size="md"

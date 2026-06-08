@@ -80,7 +80,7 @@ export default function Testimonials() {
   }, [emblaApi]);
 
   return (
-    <SectionWrapper id="testimonials" className="py-16 md:py-24 overflow-hidden">
+    <SectionWrapper id="testimonials" className="py-16 md:py-24">
       <GlowEffect
         color="purple"
         size="lg"

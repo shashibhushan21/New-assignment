@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 export default function Pricing() {
   return (
-    <SectionWrapper id="pricing">
+    <SectionWrapper id="pricing" className="py-20 md:py-32">
       <GlowEffect
         color="orange"
         size="lg"

@@ -9,7 +9,7 @@ import { mentors } from "@/data/mentors";
 
 export default function MentorSection() {
   return (
-    <SectionWrapper id="mentors">
+    <SectionWrapper id="mentors" className="py-20 md:py-32">
       <GlowEffect
         color="purple"
         size="lg"

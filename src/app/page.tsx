@@ -46,7 +46,7 @@ const FooterCTA = dynamic(
 
 export default function Home() {
   return (
-    <main className="flex-1">
+    <main className="flex-1 overflow-x-hidden space-y-16 md:space-y-24">
       <Navbar />
       <Hero />
       <Statistics />
@@ -57,7 +57,8 @@ export default function Home() {
       <MentorSection />
       <Pricing />
       <Community />
-      <FAQ />
+  
+     
       <FooterCTA />
     </main>
   );

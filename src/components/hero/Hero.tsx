@@ -80,7 +80,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-white/10 bg-white/[0.04] backdrop-blur-sm text-slate-300 text-xs font-medium mb-8"
+          className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-white/10 bg-white/[0.04] backdrop-blur-sm text-slate-300 text-xs font-medium mb-6"
         >
           <Zap size={12} className="text-orange-400" />
           Limited Seats
@@ -119,7 +119,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
-          className="flex items-center gap-6 sm:gap-10 mt-8"
+          className="flex items-center gap-8 sm:gap-12 mt-10"
         >
           {stats.map((stat, i) => (
             <div key={i} className="text-center">
@@ -143,16 +143,16 @@ export default function Hero() {
         >
           <motion.a
             href="#pricing"
-            whileHover={{ scale: 1.03, boxShadow: "0 0 30px rgba(249,115,22,0.4)" }}
-            whileTap={{ scale: 0.97 }}
-            className="btn-primary text-sm sm:text-base px-7 py-3.5 rounded-full flex items-center gap-2 font-semibold"
+            whileHover={{ scale: 1.02, boxShadow: "0 0 30px rgba(249,115,22,0.4)" }}
+            whileTap={{ scale: 0.98 }}
+            className="btn-primary text-sm sm:text-base px-8 py-4 rounded-xl flex items-center gap-2 font-semibold"
           >
             Join the Challenge Now
             <ArrowRight size={16} />
           </motion.a>
           <motion.a
             href="#video"
-            whileHover={{ scale: 1.03 }}
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.97 }}
             className="flex items-center gap-2 text-sm sm:text-base text-orange-400 font-medium cursor-pointer group"
           >

@@ -7,7 +7,7 @@ import GlowEffect from "@/components/shared/GlowEffect";
 
 export default function VideoSection() {
   return (
-    <section id="video" className="relative pb-16 md:pb-24 -mt-4 overflow-x-hidden">
+    <section id="video" className="relative pb-16 md:pb-24 mb-20 md:mb-32">
       <GlowEffect
         color="purple"
         size="lg"
@@ -38,7 +38,7 @@ export default function VideoSection() {
             {/* Play Button — centered */}
             <div className="absolute inset-0 flex items-center justify-center">
               <motion.button
-                whileHover={{ scale: 1.12 }}
+                whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center cursor-pointer border border-white/20 group transition-all duration-300 hover:bg-white/25"
                 aria-label="Play demo video"

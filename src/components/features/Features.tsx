@@ -48,7 +48,7 @@ export default function Features() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.12, duration: 0.5, ease: "easeOut" as const }}
-                whileHover={{ y: -6, transition: { duration: 0.25 } }}
+                whileHover={{ y: -4, transition: { duration: 0.25 } }}
                 className="group relative rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 sm:p-7 hover:border-orange-500/20 hover:bg-white/[0.04] transition-all duration-400 cursor-default"
               >
                 {/* Top orange line accent */}
