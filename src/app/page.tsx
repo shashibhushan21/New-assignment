@@ -57,8 +57,7 @@ export default function Home() {
       <MentorSection />
       <Pricing />
       <Community />
-  
-     
+<FAQ/>
       <FooterCTA />
     </main>
   );
